@@ -1,9 +1,10 @@
 function evaluateMe()
 {
     var s=document.getElementById('result').value;
-    if(s.length==0)
+    if(s.length==0){
         alert("Please enter an Expression")
         return;
+    }
     try{
         var res=eval(s);
         document.getElementById('result').value=res;
@@ -12,7 +13,7 @@ function evaluateMe()
         alert("invalid expression");
     }
 }
-function square()
+function squareroot()
 {
     var s=document.getElementById('result').value;
     document.getElementById('result').value=Math.sqrt(s);

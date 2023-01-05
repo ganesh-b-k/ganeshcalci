@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" href="calccss.css">
+</head>
+<body>
+    <div class="maincalc">
+        <div class="resultHolder">
+            <input type="text" id="result" readonly>
+        </div>
+        
+
+        <div class="resbox">
+            <button class="clr" id="special" onclick="document.getElementById('result').value=''">Clr</button>
+            <button class="clr" id="special" onclick="document.getElementById('result').value=
+            document.getElementById('result').value.substring(0, document.getElementById('result').value.length-1)
+        ">Back</button>
+            <button class="res" id="special" onclick=evaluateMe()>RESULT</button>
+        </div>
+
+        <div class="btnContainer">
+            
+            <div>
+                <button onclick="document.getElementById('result').value+='7'">7</button>
+                <button onclick="document.getElementById('result').value+='8'">8</button>
+                <button onclick="document.getElementById('result').value+='9'">9</button>
+                <button onclick="document.getElementById('result').value+='/'">/</button>
+                <button onclick="document.getElementById('result').value+='4'">4</button>
+                <button onclick="document.getElementById('result').value+='5'">5</button>
+                <button onclick="document.getElementById('result').value+='6'">6</button>
+                <button onclick="document.getElementById('result').value+='*'">*</button>
+                <button onclick="document.getElementById('result').value+='1'">1</button>
+                <button onclick="document.getElementById('result').value+='2'">2</button>
+                <button onclick="document.getElementById('result').value+='3'">3</button>
+                <button onclick="document.getElementById('result').value+='+'">+</button>
+                <button onclick="document.getElementById('result').value+='.'">.</button>
+                <button onclick="document.getElementById('result').value+='0'">0</button>
+                <button onclick="document.getElementById('result').value+='00'">00</button>
+                <button onclick="document.getElementById('result').value+='-'">-</button>
+                <button style="width: 14.5vw;" onclick=squareroot()>sqrt</button>
+                <button style="width: 14.5vw;" onclick=cuberoot()>cbrt</button>
+                <button style="width: 14.5vw;" onclick="document.getElementById('result').value+='%'">mod</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="calcjs.js">
+
+    </script>
+    
+</body>
+</html>

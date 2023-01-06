@@ -92,5 +92,25 @@ button:hover{
     background-color: rgb(197, 164, 203);
     transition: transform 0.5s,color 0.5s,background-color 0.5s,border 0.5s;
 }
+@media screen and (max-width: 750px) {
+  .maincalc {
+    width: 70vw;
+  }
 
+  .btnContainer button {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .maincalc {
+    width: 90vw;
+  }
+
+  .btnContainer button {
+    font-size: 12px;
+  }
+
+}
 
